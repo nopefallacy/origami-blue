@@ -1,0 +1,143 @@
+<style>
+        /* this room: the subject sits low — graphics fill the space above the head */
+        #g-scale, #g-bridge, #g-hook, #g-crore, #g-call, #g-after, #g-order, #g-ifthen, #g-cta { transform: translateY(60px) scale(1.06); transform-origin: 540px 250px; }
+      </style>
+      <!-- ================= BEHIND THE SUBJECT ================= -->
+      <!-- balance scale: one construction, three appearances (hook, missing value, compared on price) -->
+      <div id="g-scale" class="layer behind clip" data-start="5.0" data-duration="79.4" data-track-index="1">
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920">
+          <g id="sc-all" filter="url(#boil)">
+            <line id="sc-post" x1="540" y1="320" x2="540" y2="572" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" />
+            <line id="sc-base" x1="466" y1="574" x2="614" y2="574" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" />
+            <line id="sc-beam" x1="250" y1="320" x2="830" y2="320" stroke="#F5F3EE" stroke-width="5" stroke-linecap="round" />
+            <circle cx="540" cy="320" r="9" fill="#5AA9E6" />
+            <g id="sc-L">
+              <path class="sc-str" d="M0 0 L -95 110 M 0 0 L 95 110" fill="none" stroke="#F5F3EE" stroke-width="2.5" />
+              <path d="M-100 110 Q 0 162 100 110" fill="none" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" />
+              <g id="sc-price"><rect x="-64" y="58" width="128" height="50" rx="9" fill="#2478AF" /><text x="0" y="92" text-anchor="middle" font-family="Inter Tight" font-weight="800" font-size="26" letter-spacing="1" fill="#F5F3EE">PRICE</text></g>
+            </g>
+            <g id="sc-R">
+              <path class="sc-str" d="M0 0 L -95 110 M 0 0 L 95 110" fill="none" stroke="#F5F3EE" stroke-width="2.5" />
+              <path d="M-100 110 Q 0 162 100 110" fill="none" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" />
+              <g id="sc-value"><rect id="sc-vbox" x="-64" y="58" width="128" height="50" rx="9" fill="none" stroke="#F5F3EE" stroke-width="2.5" stroke-dasharray="7 6" /><text id="sc-vtxt" x="0" y="92" text-anchor="middle" font-family="Inter Tight" font-weight="800" font-size="26" letter-spacing="1" fill="#F5F3EE">VALUE</text></g>
+              <text id="sc-q" x="96" y="70" font-family="Instrument Serif" font-style="italic" font-size="64" fill="#5AA9E6">?</text>
+            </g>
+          </g>
+        </svg>
+        <div id="sc-l1" class="serif sh" style="position: absolute; left: 70px; top: 252px; font-size: 54px; line-height: 58px; color: var(--white)">feels expensive.</div>
+        <div id="sc-l2" class="serif sh" style="position: absolute; left: 70px; top: 252px; font-size: 54px; line-height: 58px; color: var(--white)">they can't see it.</div>
+        <div id="sc-l3" class="serif sh" style="position: absolute; left: 70px; top: 252px; font-size: 54px; line-height: 58px; color: var(--white)">compared on price.</div>
+      </div>
+
+      <!-- point A -> point B -->
+      <div id="g-bridge" class="layer behind clip" data-start="57.5" data-duration="11.2" data-track-index="2">
+        <div id="br-all" class="layer">
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920">
+          <g filter="url(#boil)">
+          <path id="br-arc" d="M236 420 C 360 236, 720 236, 844 420" fill="none" stroke="#F5F3EE" stroke-width="3" stroke-dasharray="8 9" />
+          <circle id="br-a" cx="210" cy="470" r="62" fill="rgba(18,17,19,0.35)" stroke="#F5F3EE" stroke-width="3" />
+          <circle id="br-b" cx="870" cy="470" r="62" fill="#FED100" />
+          </g>
+          <path id="br-arc2" d="M236 420 C 360 236, 720 236, 844 420" fill="none" stroke="#5AA9E6" stroke-width="9" stroke-linecap="round" filter="url(#brush)" />
+          <circle id="br-dot" cx="236" cy="420" r="12" fill="#5AA9E6" />
+        </svg>
+        <div id="br-at" style="position: absolute; left: 148px; top: 434px; width: 124px; text-align: center; font-size: 60px; line-height: 72px; font-weight: 900; color: var(--white)">A</div>
+        <div id="br-bt" style="position: absolute; left: 808px; top: 434px; width: 124px; text-align: center; font-size: 60px; line-height: 72px; font-weight: 900; color: var(--ink)">B</div>
+        <div id="br-al" class="sh" style="position: absolute; left: 60px; top: 546px; width: 300px; text-align: center"><span class="small-caps" style="display: block; color: var(--white)">where they are</span><span class="serif" style="display: block; font-size: 44px; line-height: 48px">pain · crisis</span></div>
+        <div id="br-bl" class="sh" style="position: absolute; left: 690px; top: 546px; width: 360px; text-align: center"><span class="small-caps" style="display: block; color: var(--white)">where they want to be</span><span class="serif" style="display: block; font-size: 44px; line-height: 48px; color: var(--yellow)">the dream</span></div>
+        <div id="br-pill" class="pill b" style="left: 375px; top: 250px; width: 330px; height: 62px; font-size: 30px">your consulting</div>
+        </div>
+      </div>
+
+      <!-- ================= GHOST TYPE (behind the subject) ================= -->
+      <div id="gh-hook" class="layer behind clip" data-start="0" data-duration="5.0" data-track-index="6"><div id="gh1" class="ghost" style="top: 548px">price</div></div>
+      <div id="gh-after" class="layer behind clip" data-start="36.9" data-duration="3.8" data-track-index="6"><div id="gh2" class="ghost" style="top: 545px">after</div></div>
+      <div id="gh-cta" class="layer behind clip" data-start="86.6" data-duration="4.07" data-track-index="6"><div id="gh3" class="ghost" style="top: 596px">value</div></div>
+
+      <!-- ================= IN FRONT ================= -->
+      <div id="g-hook" class="layer front clip" data-start="0" data-duration="5.0" data-track-index="3">
+        <div id="h-l1" class="w-line" style="top: 268px; justify-content: center; gap: 0.5em"><span>Your</span><span>price</span><span>isn't</span></div>
+        <div id="h-l2" class="y-big" style="top: 328px; font-size: 132px; line-height: 136px"><span>the</span><span>problem.</span></div>
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><path id="h-swoosh" d="M420 484 C 540 466, 720 460, 830 468 S 930 476, 960 464" fill="none" stroke="#5AA9E6" stroke-width="12" stroke-linecap="round" filter="url(#brush)" /></svg>
+      </div>
+
+      <div id="g-crore" class="layer front clip" data-start="11.6" data-duration="2.9" data-track-index="3">
+        <div id="cr-l1" class="w-line" style="top: 290px"><span>What</span><span>it</span><span>takes</span><span>to</span><span>build</span><span>a</span></div>
+        <div id="cr-l2" class="y-big" style="top: 372px; font-size: 156px; line-height: 160px; gap: 0.16em"><span>₹1</span><span>crore</span></div>
+        <div id="cr-biz" class="serif sh" style="position: absolute; right: 110px; top: 520px; font-size: 66px; line-height: 72px">coaching business.</div>
+      </div>
+
+      <div id="g-call" class="layer front clip" data-start="16.8" data-duration="12.7" data-track-index="3">
+        <div id="ca-rule" class="vrule" style="left: 326px; top: 258px; height: 290px"></div>
+        <div id="ca-k1" class="small-caps" style="position: absolute; left: 70px; top: 284px; width: 240px; text-align: center; color: var(--white)">The lead</div>
+        <div id="ca-q1" class="serif sh" style="position: absolute; left: 352px; top: 262px; font-size: 58px; line-height: 70px">“what's the price?”</div>
+        <div id="ca-k2" class="small-caps" style="position: absolute; left: 70px; top: 382px; width: 240px; text-align: center; color: var(--white)">You</div>
+        <div id="ca-p" class="pill b" style="left: 352px; top: 360px; width: 300px; height: 72px; font-size: 40px; letter-spacing: 0.02em">₹ ••,•••</div>
+        <div id="ca-k3" class="small-caps" style="position: absolute; left: 70px; top: 480px; width: 240px; text-align: center; color: var(--white)">The lead</div>
+        <div id="ca-q3" class="serif sh" style="position: absolute; left: 352px; top: 458px; font-size: 58px; line-height: 70px; color: var(--white)">“…that's expensive.”</div>
+      </div>
+
+      <div id="g-after" class="layer front clip" data-start="36.9" data-duration="3.8" data-track-index="3">
+        <div id="af-l1" class="w-line" style="top: 290px; justify-content: center; gap: 0.5em"><span>They</span><span>can't</span><span>picture</span></div>
+        <div id="af-l2" class="serif sh center-x ink" style="top: 352px; font-size: 112px; line-height: 118px; color: var(--yellow)">the life after.</div>
+      </div>
+
+      <!-- B-roll cutaway: the iceberg -->
+      <div id="g-ice" class="layer front clip" data-start="40.4" data-duration="4.5" data-track-index="4" style="z-index: 8">
+        <div id="ice-page" class="layer" style="background-color: #121113; background-image: radial-gradient(circle, rgba(245, 243, 238, 0.07) 1.6px, transparent 2.1px); background-size: 26px 26px">
+          <div class="layer" style="top: 900px; height: 1020px; background: linear-gradient(to bottom, rgba(36, 120, 175, 0.22), rgba(36, 120, 175, 0.05))"></div>
+          <div id="ice-k" class="small-caps center-x" style="top: 330px; color: #5AA9E6">The transformation they'll feel</div>
+          <div class="page-tex"></div>
+          <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><g filter="url(#boil)">
+            <path id="ice-water" d="M60 900 C 200 890, 330 910, 470 900 S 760 890, 1020 900" fill="none" stroke="#2478AF" stroke-width="4" stroke-linecap="round" />
+            <path id="ice-tip" d="M418 900 L 466 792 L 516 736 L 556 772 L 604 716 L 650 800 L 692 900" fill="url(#dots-w)" fill-opacity="0.55" stroke="#F5F3EE" stroke-width="4" stroke-linejoin="round" />
+            <path id="ice-deep" d="M392 902 L 300 1060 L 240 1260 L 322 1460 L 520 1570 L 726 1488 L 836 1284 L 790 1064 L 716 902" fill="url(#dots-y)" fill-opacity="0.5" stroke="#FED100" stroke-width="4" stroke-linejoin="round" />
+            <path id="ice-lead" d="M640 760 L 760 690" fill="none" stroke="#F5F3EE" stroke-width="2" />
+          </g></svg>
+          <div id="ice-phys" class="sh" style="position: absolute; left: 770px; top: 646px"><span class="small-caps" style="display: block; color: var(--white)">Physical</span><span style="display: block; font-size: 26px; color: rgba(245, 243, 238, 0.7)">what they see</span></div>
+          <div id="ice-psy" class="center-x" style="top: 1196px"><span class="small-caps" style="display: block; color: var(--yellow)">Psychological</span><span class="serif ink" style="display: block; font-size: 78px; line-height: 84px; color: var(--yellow)">what they feel</span></div>
+          <div class="page-vig"></div>
+        </div>
+      </div>
+
+      <div id="g-order" class="layer front clip" data-start="44.6" data-duration="3.75" data-track-index="3">
+        <div id="or-k" class="small-caps center-x" style="top: 262px; color: var(--white)">The right order</div>
+        <div id="or-1" class="pill y" style="left: 110px; top: 310px; width: 370px; height: 92px; font-size: 44px"><span style="font-size: 24px; margin-right: 14px; opacity: 0.6">01</span>VALUE</div>
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><path id="or-ar" d="M500 356 L 572 356 M 556 340 L 574 356 L 556 372" fill="none" stroke="#5AA9E6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        <div id="or-2" class="outline" style="left: 596px; top: 310px; width: 370px; height: 92px; font-size: 44px; font-weight: 800"><span style="font-size: 24px; margin-right: 14px; opacity: 0.6">02</span>PRICE</div>
+        <div id="or-s" class="serif sh center-x" style="top: 426px; font-size: 60px; line-height: 66px">before you quote a price.</div>
+      </div>
+
+      <div id="g-ifthen" class="layer front clip" data-start="69.0" data-duration="9.4" data-track-index="3">
+        <div id="it-rule" class="vrule" style="left: 326px; top: 258px; height: 172px"></div>
+        <div id="it-k1" class="lbl" style="position: absolute; left: 70px; top: 276px; width: 240px; font-size: 40px; text-align: center">If</div>
+        <div id="it-r1" class="outline" style="left: 352px; top: 262px; width: 648px; height: 72px; justify-content: flex-start; padding-left: 26px; font-size: 32px">value is seeded in their mind</div>
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><path id="it-check" d="M948 296 L 962 312 L 986 284" fill="none" stroke="#5AA9E6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        <div id="it-k2" class="lbl" style="position: absolute; left: 70px; top: 364px; width: 240px; font-size: 40px; text-align: center">Then</div>
+        <div id="it-reveal" class="pill y" style="left: 352px; top: 350px; width: 648px; height: 72px; font-size: 34px">the pricing discussion opens</div>
+        <div id="it-dl" class="outline" style="left: 352px; top: 350px; width: 324px; height: 72px; border-radius: 12px 0 0 12px; background: #1b1a1d"></div>
+        <div id="it-dr" class="outline" style="left: 676px; top: 350px; width: 324px; height: 72px; border-radius: 0 12px 12px 0; background: #1b1a1d"></div>
+      </div>
+
+      <div id="g-cta" class="layer front clip" data-start="86.6" data-duration="4.07" data-track-index="3">
+        <div id="cta-l1" class="w-line" style="top: 258px"><span>Comment</span><span>the</span><span>word</span></div>
+        <div id="keys" style="position: absolute; left: 0; width: 1080px; top: 330px; display: flex; justify-content: center; gap: 16px"><span class="key">V</span><span class="key">A</span><span class="key">L</span><span class="key">U</span><span class="key">E</span></div>
+        <div id="cta-s" class="serif sh center-x" style="top: 486px; font-size: 48px; line-height: 52px">&amp; I'll send you the workbook.</div>
+      </div>
+
+      <!-- captions (own layer, ride under the chin) -->
+      <div id="captions" class="layer caps"><div id="cap-burn"></div></div>
+
+      <div id="g-tile" class="layer front clip" data-start="9.6" data-duration="2.6" data-track-index="5" style="z-index: 8">
+        <div id="tile">
+          <div id="t-num"><span class="ep">ep.</span><span class="n">03</span></div>
+          <div id="t-block">
+            <span id="t-coach">coach meet</span>
+            <span class="t-word" id="t-business">business</span>
+            <span class="t-word" id="t-series"><span id="t-bar"></span><span class="txt">series</span></span>
+          </div>
+          <div id="t-foot">Building a ₹1 crore business, step by step</div>
+        </div>
+      </div>
+
+      <div id="grain" class="layer front"></div>

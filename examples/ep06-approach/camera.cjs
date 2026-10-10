@@ -1,0 +1,31 @@
+// ep.06 camera: screen = s * source + (dx, dy); s >= 1 always. Face-centred pushes; wide while diagrams are up.
+const full = (z = 1, fx = 540, fy = 1000) => ({ s: z, dx: fx * (1 - z), dy: fy * (1 - z), p: 0 });
+const KEYS = [
+  [0, full(1.10), 0], [0, full(1.06), 6.2, "sine.inOut"],
+  [6.4, full(1.14), 0.3, "power4.out"], [6.7, full(1.17), 2.3, "sine.out"],
+  [9.1, full(1.04), 0], [11.3, full(1.03), 2.2, "sine.inOut"],
+  [13.6, full(1.10), 0.35, "power4.out"], [13.95, full(1.12), 1.1, "sine.out"],
+  [15.2, full(1.03), 0.7, "power3.inOut"], [15.9, full(1.07, 540, 900), 4.6, "sine.inOut"],
+  [20.6, full(1.0), 0.8, "power3.inOut"], [21.4, full(1.02), 13.0, "sine.inOut"],
+  [34.56, full(1.07), 0.35, "power2.out"], [34.91, full(1.06), 2.8, "sine.inOut"],
+  [37.84, full(1.10), 0.3, "power4.out"], [38.14, full(1.12), 2.0, "sine.out"],
+  [40.3, full(1.03), 0.6, "power3.inOut"], [40.9, full(1.07), 4.2, "sine.inOut"],
+  [47.44, full(1.13), 0.3, "power4.out"], [47.74, full(1.16), 2.0, "sine.out"],
+  [49.9, full(1.03), 0.6, "power3.inOut"], [50.5, full(1.06, 540, 900), 4.4, "sine.inOut"],
+  [54.9, full(1.0), 0.7, "power3.inOut"], [55.6, full(1.02), 9.0, "sine.inOut"],
+  [64.6, full(1.03), 0.6, "power3.inOut"], [65.2, full(1.06), 9.4, "sine.inOut"],
+  [74.75, full(1.04), 0], [81.8, full(1.06), 0.6, "power3.inOut"], [82.4, full(1.09), 2.3, "sine.inOut"],
+  [84.7, full(1.0), 0.7, "power3.inOut"], [85.4, full(1.02), 6.9, "sine.inOut"],
+  [92.41, full(1.08), 0.3, "power4.out"], [92.71, full(1.09), 4.9, "sine.out"],
+  [97.77, full(1.12), 0.3, "power4.out"], [98.07, full(1.13), 0.6, "sine.out"],
+  [98.7, full(1.03), 0.6, "power3.inOut"], [99.3, full(1.06), 3.2, "sine.inOut"],
+  [102.6, full(1.02), 0.6, "power3.inOut"],
+  [106.09, full(1.08), 0.35, "power2.out"], [106.44, full(1.07), 1.5, "sine.inOut"],
+  [108.0, full(1.02), 0.6, "power3.inOut"],
+  [109.05, full(1.07), 0.4, "power2.out"], [109.45, full(1.06), 4.4, "sine.inOut"],
+  [113.9, full(1.0), 0.6, "power3.inOut"],
+  [115.93, full(1.08), 0.35, "power2.out"], [116.28, full(1.09), 1.3, "sine.out"],
+  [117.7, full(1.03), 0.6, "power3.inOut"],
+  [119.78, full(1.06), 0.4, "power2.out"], [120.18, full(1.04), 4.6, "sine.inOut"],
+];
+module.exports = { KEYS };

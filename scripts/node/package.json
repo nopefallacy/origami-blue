@@ -1,0 +1,5 @@
+{
+  "name": "origami-blue-camexport",
+  "private": true,
+  "dependencies": { "gsap": "3.15.0" }
+}

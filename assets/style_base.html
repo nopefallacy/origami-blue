@@ -1,0 +1,103 @@
+<style>
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("fonts/intertight-latin.woff2") format("woff2");
+        font-weight: 100 900;
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("fonts/intertight-latinext.woff2") format("woff2");
+        font-weight: 100 900;
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Instrument Serif";
+        src: url("fonts/instrument-italic.woff2") format("woff2");
+        font-weight: 400;
+        font-style: italic;
+      }
+      :root {
+        --ink: #121113;
+        --white: #f5f3ee;
+        --yellow: #fed100;
+        --blue: #2478af;
+        --paper: #ecebe6;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Inter Tight", sans-serif; color: var(--white); }
+      .layer { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+      .behind { z-index: 3; }
+      .front { z-index: 6; }
+      .caps { z-index: 7; }
+      .serif { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+      .sh { text-shadow: 0 3px 22px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.25); }
+      /* white justified kicker line */
+      .w-line { position: absolute; left: 108px; width: 864px; display: flex; justify-content: space-between; font-size: 56px; line-height: 60px; font-weight: 800; letter-spacing: -0.035em; text-transform: uppercase; color: var(--white); text-shadow: 0 3px 22px rgba(0, 0, 0, 0.45), 0 0 18px rgba(255, 255, 255, 0.1); }
+      .w-line span, .y-big span, .row span { display: inline-block; }
+      /* big yellow headline */
+      .y-big { position: absolute; left: 0; width: 1080px; display: flex; justify-content: center; gap: 0.22em; font-weight: 900; letter-spacing: -0.06em; text-transform: uppercase; color: var(--yellow); text-shadow: 0 0 26px rgba(254, 209, 0, 0.28), 0 4px 24px rgba(0, 0, 0, 0.42); }
+      .lbl { font-weight: 800; letter-spacing: -0.03em; text-transform: uppercase; color: var(--white); text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5); }
+      .lbl span { display: block; }
+      .small-caps { font-size: 21px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245, 243, 238, 0.75); }
+      .pill { position: absolute; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; letter-spacing: -0.035em; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+      .pill.y { background: var(--yellow); color: var(--ink); }
+      .pill.b { background: var(--blue); color: var(--white); }
+      .outline { position: absolute; border-radius: 12px; border: 2px solid rgba(245, 243, 238, 0.85); display: flex; align-items: center; justify-content: center; font-weight: 600; letter-spacing: -0.03em; color: var(--white); background: rgba(18, 17, 19, 0.25); text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); }
+      .vrule { position: absolute; width: 2px; background: rgba(245, 243, 238, 0.55); transform-origin: 50% 0%; }
+      svg.layer { overflow: visible; }
+      .center-x { position: absolute; left: 0; width: 1080px; text-align: center; }
+
+      /* captions */
+      .cap { position: absolute; left: 0; width: 1080px; top: 1440px; display: flex; justify-content: center; gap: 0.24em; font-size: 58px; line-height: 66px; font-weight: 700; letter-spacing: -0.045em; color: var(--white); text-shadow: 0 0 22px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.55), 0 0 2px rgba(0, 0, 0, 0.4); }
+      .cap .w { display: inline-block; opacity: 0; }
+      .cap .w.k { color: var(--yellow); }
+      #cap-burn { position: absolute; left: 90px; top: 1352px; width: 900px; height: 240px; border-radius: 50%; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(12, 10, 9, 0.6) 0%, rgba(12, 10, 9, 0.36) 45%, rgba(12, 10, 9, 0) 100%); filter: blur(18px); opacity: 0; }
+
+      /* series tile */
+      #tile { position: absolute; inset: 0; background-color: var(--paper); background-image: radial-gradient(circle, rgba(18, 17, 19, 0.09) 1.8px, transparent 2.3px); background-size: 26px 26px; background-position: 13px 13px; color: var(--ink); }
+      #t-num { position: absolute; right: 96px; top: 380px; display: flex; align-items: flex-end; gap: 14px; }
+      #t-num .ep { display: block; font-size: 48px; line-height: 48px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 44px; }
+      #t-num .n { display: block; font-size: 360px; line-height: 300px; font-weight: 900; letter-spacing: -0.07em; }
+      #t-block { position: absolute; left: 96px; top: 800px; }
+      #t-coach { display: block; font-size: 54px; line-height: 60px; font-weight: 700; letter-spacing: -0.035em; color: var(--blue); margin: 0 0 30px 6px; }
+      .t-word { position: relative; display: block; font-size: 212px; line-height: 188px; font-weight: 900; letter-spacing: -0.065em; }
+      #t-series { color: var(--white); width: fit-content; }
+      #t-bar { position: absolute; left: -10px; right: -26px; top: 26px; bottom: -14px; background: var(--blue); transform-origin: 0% 50%; }
+      #t-series .txt { position: relative; display: block; }
+      #t-foot { position: absolute; left: 104px; top: 1300px; font-size: 24px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(18, 17, 19, 0.5); }
+
+      /* rx card */
+      #rx { position: absolute; left: 150px; top: 250px; width: 780px; height: 292px; border-radius: 18px; background: #f3f1ea; color: var(--ink); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45); padding: 26px 34px; }
+      #rx .hd { display: flex; align-items: baseline; gap: 18px; border-bottom: 2px solid rgba(18, 17, 19, 0.12); padding-bottom: 12px; }
+      #rx .rxs { font-size: 64px; line-height: 60px; }
+      #rx .dr { font-size: 22px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(18, 17, 19, 0.55); }
+      .rxrow { position: relative; display: flex; align-items: center; gap: 16px; margin-top: 12px; font-size: 34px; font-weight: 700; letter-spacing: -0.03em; }
+      .box { display: block; width: 34px; height: 34px; border-radius: 7px; border: 3px solid var(--ink); position: relative; }
+      .strike { position: absolute; left: 50px; top: 50%; height: 4px; width: 260px; background: var(--ink); transform-origin: 0% 50%; }
+      #stamp { position: absolute; left: 830px; top: 400px; width: 180px; height: 180px; border-radius: 50%; border: 6px solid var(--yellow); color: var(--yellow); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 26px; line-height: 28px; font-weight: 900; letter-spacing: 0.02em; text-transform: uppercase; background: rgba(18, 17, 19, 0.85); }
+
+      /* research sheet */
+      #sheet { position: absolute; left: 90px; top: 250px; width: 900px; height: 304px; border-radius: 18px; background: #f3f1ea; color: var(--ink); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5); padding: 20px 30px; }
+      #sheet .hd { display: flex; justify-content: space-between; align-items: center; }
+      #sheet .ttl { font-size: 38px; font-weight: 800; letter-spacing: -0.04em; }
+      #sheet .tag { font-size: 18px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--white); background: var(--blue); padding: 8px 12px; border-radius: 6px; }
+      .srow { position: relative; display: flex; align-items: center; gap: 18px; height: 42px; border-bottom: 2px solid rgba(18, 17, 19, 0.1); font-size: 30px; font-weight: 600; letter-spacing: -0.03em; }
+      .srow .num { width: 40px; font-size: 20px; font-weight: 700; color: rgba(18, 17, 19, 0.45); letter-spacing: 0.06em; }
+      .srow .fill { position: absolute; right: 0; top: 50%; width: 330px; height: 10px; margin-top: -5px; border-radius: 5px; background: rgba(36, 120, 175, 0.85); transform-origin: 0% 50%; }
+      #crore-stamp { position: absolute; left: 800px; top: 486px; padding: 14px 20px; border: 4px solid var(--yellow); border-radius: 10px; color: var(--yellow); background: rgba(18, 17, 19, 0.82); font-size: 26px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; line-height: 30px; }
+
+      .key { display: flex; width: 132px; height: 132px; border-radius: 26px; background: var(--yellow); color: var(--ink); align-items: center; justify-content: center; font-size: 92px; font-weight: 900; letter-spacing: -0.04em; box-shadow: 0 10px 0 #b39300, 0 24px 40px rgba(0, 0, 0, 0.4); }
+      .bubble { position: absolute; height: 74px; border-radius: 37px; border: 2px solid rgba(245, 243, 238, 0.85); background: rgba(18, 17, 19, 0.3); display: flex; align-items: center; justify-content: center; gap: 12px; }
+      .bubble i { display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--white); }
+      #grain { z-index: 9; background-image: url("media/grain-rgba.png"); background-size: 384px 384px; opacity: 0.55; pointer-events: none; }
+
+      /* ---------- handmade / print textures ---------- */
+      .y-big, .ink { -webkit-mask-image: url("media/ink.png"); -webkit-mask-size: 512px 512px; mask-image: url("media/ink.png"); mask-size: 512px 512px; }
+      .y-big { padding: 40px 0; margin-top: -40px; }
+      .ghost { position: absolute; left: 0; width: 1080px; text-align: center; font-size: 300px; line-height: 300px; font-weight: 900; letter-spacing: -0.06em; text-transform: uppercase; white-space: nowrap; color: transparent; -webkit-text-stroke: 2.5px rgba(245, 243, 238, 0.34); background-image: radial-gradient(circle, rgba(245, 243, 238, 0.24) 1.7px, transparent 2.2px); background-size: 10px 10px; -webkit-background-clip: text; background-clip: text; transform-origin: 50% 50%; }
+      .page-tex { position: absolute; inset: 0; background-image: url("media/paper.png"); background-size: 512px 512px; mix-blend-mode: screen; }
+      .page-vig { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 62% at 50% 46%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.5) 100%); }
+      #ice-page, #in-page, #tile { box-shadow: 0 0 90px rgba(0, 0, 0, 0.7); }
+    </style>

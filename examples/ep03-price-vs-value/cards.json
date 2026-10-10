@@ -1,0 +1,93 @@
+[
+ {
+  "t": 2.6,
+  "title": "Hook",
+  "line": "When a lead on a sales call asks you the price…",
+  "visual": "YOUR PRICE ISN'T / THE PROBLEM. White kicker + big yellow headline with a hand-drawn underline. Camera pushed in from the top so the title owns the top third.",
+  "motion": "Kicker words blur in one by one (0.08s stagger); headline words blur-scale in; underline draws left to right. Exits upward with blur at 4.7s."
+ },
+ {
+  "t": 8.4,
+  "title": "Price vs value",
+  "line": "…and it feels very expensive for them to take a decision.",
+  "visual": "Thin line-art balance scale behind the speaker's head. A yellow PRICE weight drops into the left pan; the VALUE pan is empty (dashed). Serif note: feels expensive.  A yellow ? appears by the empty pan.",
+  "motion": "Scale draws in; PRICE drops on 'quote a price'; beam tips 9° then 14° on 'expensive' with a soft overshoot; punch-in on 'expensive'."
+ },
+ {
+  "t": 11.62,
+  "title": "Series tile",
+  "line": "Welcome to Coach Meet Business Series",
+  "visual": "Paper tile: ep. 03 big top-right; coach meet / business / series (blue bar) bottom-left. Same tile as ep.01/02 for series consistency.",
+  "motion": "Hard cut in; 03 rises; words land on the spoken word; tile wipes up to reveal the speaker."
+ },
+ {
+  "t": 14.1,
+  "title": "1 crore",
+  "line": "…what it takes to build a one crore coaching business.",
+  "visual": "WHAT IT TAKES TO BUILD A (justified) / ₹1 CRORE (yellow) / coaching business. (serif).",
+  "motion": "Each kicker word appears on its spoken word; ₹1 CRORE blur-scales in on 'one crore'."
+ },
+ {
+  "t": 28.2,
+  "title": "The call",
+  "line": "…you quote that price, and it feels very expensive for them to take an action.",
+  "visual": "Dialogue in the label-column grammar: THE LEAD “what's the price?” → YOU [₹ ••,•••] → THE LEAD “…that's expensive.” Thin rule separates speaker from words.",
+  "motion": "Rule draws down; each line arrives on its spoken moment; earlier lines dim to 45% when “expensive” lands."
+ },
+ {
+  "t": 34.2,
+  "title": "The missing value",
+  "line": "…they are not able to understand the value you are trying to deliver.",
+  "visual": "The scale returns, still tipped to PRICE. The empty VALUE pan lights up yellow. Serif: they can't see it.",
+  "motion": "Scale fades back in already tipped (continuity); VALUE outline turns yellow and pulses twice on 'value'."
+ },
+ {
+  "t": 39.6,
+  "title": "The life after",
+  "line": "…not able to depict the life they will achieve once they go through the transformation",
+  "visual": "THEY CAN'T PICTURE / the life after. (large yellow serif).",
+  "motion": "Kicker words on 'they're… depict'; serif line blur-scales in on 'life'."
+ },
+ {
+  "t": 43.95,
+  "title": "B-roll: iceberg",
+  "line": "…not just from the physical level, but from a psychological level as well.",
+  "visual": "Full-screen graphic cutaway. Dark page, blue water. Small white tip above the waterline = PHYSICAL (what they see); huge yellow mass below = PSYCHOLOGICAL (what they feel).",
+  "motion": "Page slides up from below; waterline draws; tip outlines on 'physical'; the deep mass draws slower and bigger on 'psychological'; page slides away up."
+ },
+ {
+  "t": 47.9,
+  "title": "Value to price",
+  "line": "Values should be understood really well before you quote a price.",
+  "visual": "THE RIGHT ORDER: [01 VALUE] → [02 PRICE] + serif: before you quote a price.",
+  "motion": "VALUE pill pops on 'values'; arrow draws on 'before'; PRICE slides in on 'quote a price'."
+ },
+ {
+  "t": 67.55,
+  "title": "Point A to point B",
+  "line": "Your consulting happens to be the best mechanism to go from point A to point B.",
+  "visual": "Bridge diagram: A (where they are · pain, crisis) and B (yellow · the dream). A dashed arc joins them with a blue YOUR CONSULTING pill on top; a yellow line + dot travel A→B.",
+  "motion": "A pops on 'point A', B on 'dream point'; arc draws on 'your consulting'; dot rides the arc on 'point A to point B'; B pulses on arrival."
+ },
+ {
+  "t": 77.95,
+  "title": "If to then",
+  "line": "…then and only then you open the landscape for the pricing discussion.",
+  "visual": "IF  value is seeded in their mind ✓ / THEN  the pricing discussion opens (yellow).",
+  "motion": "Rows arrive on 'if' and 'only then'; check draws on 'mind'; the THEN row is closed (two halves) and slides open on 'open the platform' to reveal the yellow pill."
+ },
+ {
+  "t": 83.95,
+  "title": "Compared on price",
+  "line": "…you will always be getting compared to the price.",
+  "visual": "The scale returns one last time, tipping further to PRICE. Serif: compared on price.",
+  "motion": "Callback of the opening construction; beam drops to 18° with a punch-in on 'compared'."
+ },
+ {
+  "t": 89.6,
+  "title": "CTA",
+  "line": "Comment value, and I'll be sending you a workbook…",
+  "visual": "COMMENT THE WORD / [V][A][L][U][E] yellow keys / serif: & I'll send you the workbook.",
+  "motion": "Kicker words on 'comment'; keys drop in one after another (0.07s) with a soft bounce; serif line blurs in on 'sending'."
+ }
+]

@@ -1,0 +1,124 @@
+      <style>
+        /* this room: the subject sits low — graphics fill the space above the head */
+        #g-slider, #g-wheel, #g-gauge, #g-hook, #g-crore, #g-enough, #g-cta { transform: translateY(60px) scale(1.06); transform-origin: 540px 250px; }
+      </style>
+
+      <!-- the price slider: one construction, three appearances -->
+      <div id="g-slider" class="layer behind clip" data-start="4.2" data-duration="49.1" data-track-index="1">
+        <div id="sl-all" class="layer">
+          <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><g filter="url(#boil)">
+            <line x1="140" y1="440" x2="940" y2="440" stroke="rgba(245,243,238,0.35)" stroke-width="8" stroke-linecap="round" />
+            <g stroke="rgba(245,243,238,0.5)" stroke-width="3">
+              <line x1="140" y1="424" x2="140" y2="456" /><line x1="300" y1="430" x2="300" y2="450" /><line x1="460" y1="430" x2="460" y2="450" /><line x1="620" y1="430" x2="620" y2="450" /><line x1="780" y1="430" x2="780" y2="450" /><line x1="940" y1="424" x2="940" y2="456" />
+            </g>
+            <line id="sl-fill" x1="140" y1="440" x2="230" y2="440" stroke="#5AA9E6" stroke-width="8" stroke-linecap="round" />
+            <line id="sl-worth" x1="860" y1="370" x2="860" y2="470" stroke="#F5F3EE" stroke-width="3" stroke-dasharray="6 7" />
+            <path id="sl-gap" d="M230 398 L 860 398" fill="none" stroke="#5AA9E6" stroke-width="3" stroke-dasharray="4 8" />
+            <g id="sl-knob" transform="translate(230 440)"><circle r="24" fill="#5AA9E6" /><circle r="9" fill="#121113" /></g>
+          </g></svg>
+          <div id="sl-low" class="small-caps" style="position: absolute; left: 110px; top: 474px; color: var(--white)">Low</div>
+          <div id="sl-high" class="small-caps" style="position: absolute; right: 120px; top: 474px; color: var(--yellow)">High-ticket</div>
+          <div id="sl-wl" class="serif sh" style="position: absolute; left: 700px; width: 320px; top: 296px; text-align: center; font-size: 46px; line-height: 52px">what you're worth</div>
+          <div id="sl-gapl" class="small-caps" style="position: absolute; left: 0; width: 1080px; top: 356px; text-align: center; color: #5AA9E6">the gap</div>
+          <div id="sl-you" class="small-caps" style="position: absolute; left: 0; top: 380px; width: 200px; text-align: center; color: var(--white)">your price</div>
+          <div id="sl-msg1" class="serif sh" style="position: absolute; left: 110px; top: 512px; font-size: 54px; line-height: 60px; color: var(--white)">undersold.</div>
+          <div id="sl-msg2" class="serif sh" style="position: absolute; left: 110px; top: 512px; font-size: 54px; line-height: 60px; color: var(--white)">you undersold yourself.</div>
+          <div id="sl-msg3" class="serif sh" style="position: absolute; right: 120px; top: 512px; font-size: 54px; line-height: 60px; color: var(--yellow)">with confidence.</div>
+        </div>
+      </div>
+
+      <!-- the life wheel: transformation across their life -->
+      <div id="g-wheel" class="layer behind clip" data-start="12.6" data-duration="58.3" data-track-index="2">
+        <div id="wh-all" class="layer">
+          <svg id="wh-svg" class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"></svg>
+          <div id="wh-hub" style="position: absolute; left: 470px; top: 380px; width: 140px; height: 100px; text-align: center; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink)"><div id="wh-h1" style="position: absolute; left: 0; width: 140px; top: 24px; font-size: 24px; line-height: 26px">their<br />life</div><div id="wh-h2" style="position: absolute; left: 0; width: 140px; top: 28px; font-size: 19px; line-height: 22px">absolute<br />clarity</div></div>
+          <div id="wh-labels"></div>
+        </div>
+      </div>
+
+      <!-- the belief gauge -->
+      <div id="g-gauge" class="layer behind clip" data-start="34.7" data-duration="16.7" data-track-index="2">
+        <div id="ga-all" class="layer">
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><g filter="url(#boil)">
+          <path id="ga-arc" d="M330 530 A 210 210 0 0 1 750 530" fill="none" stroke="rgba(245,243,238,0.35)" stroke-width="10" stroke-linecap="round" />
+          <path id="ga-hi" d="M645 348.1 A 210 210 0 0 1 750 530" fill="none" stroke="#FED100" stroke-width="10" stroke-linecap="round" />
+          <g id="ga-ticks" stroke="rgba(245,243,238,0.6)" stroke-width="3"></g>
+          <g id="ga-needle" transform="translate(540 530) rotate(-68)"><line x1="0" y1="0" x2="0" y2="-178" stroke="#F5F3EE" stroke-width="6" stroke-linecap="round" /><circle r="15" fill="#5AA9E6" /></g>
+        </g></svg>
+        <div id="ga-l" class="serif sh center-x" style="top: 420px; font-size: 52px; line-height: 56px">belief</div>
+        <div id="ga-lo" class="small-caps" style="position: absolute; left: 250px; width: 160px; top: 552px; text-align: center; color: var(--white)">Doubt</div>
+        <div id="ga-hiL" class="small-caps" style="position: absolute; left: 670px; width: 160px; top: 552px; text-align: center; color: var(--yellow)">Certainty</div>
+        <div id="ga-conf" class="serif sh" style="position: absolute; left: 760px; top: 300px; font-size: 52px; line-height: 56px; color: var(--yellow)">confident.</div>
+        </div>
+      </div>
+
+
+      <!-- ================= GHOST TYPE (behind the subject) ================= -->
+      <div id="gh-hook" class="layer behind clip" data-start="0" data-duration="4.4" data-track-index="6"><div id="gh1" class="ghost" style="top: 545px">price</div></div>
+      <div id="gh-enough" class="layer behind clip" data-start="30.4" data-duration="4.1" data-track-index="6"><div id="gh2" class="ghost" style="top: 600px; font-size: 180px; line-height: 210px">expertise</div></div>
+      <div id="gh-cta" class="layer behind clip" data-start="74.0" data-duration="6.2" data-track-index="6"><div id="gh3" class="ghost" style="top: 596px">sales</div></div>
+
+      <!-- ================= IN FRONT ================= -->
+      <div id="g-hook" class="layer front clip" data-start="0" data-duration="4.4" data-track-index="3">
+        <div id="h-l1" class="w-line" style="top: 268px; justify-content: center; gap: 0.5em"><span>Why</span><span>you</span><span>keep</span></div>
+        <div id="h-l2" class="y-big" style="top: 328px; font-size: 112px; line-height: 136px"><span>undercharging.</span></div>
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><path id="h-swoosh" d="M300 484 C 460 466, 680 460, 800 468 S 900 476, 960 464" fill="none" stroke="#5AA9E6" stroke-width="12" stroke-linecap="round" filter="url(#brush)" /></svg>
+      </div>
+
+      <div id="g-crore" class="layer front clip" data-start="9.6" data-duration="2.75" data-track-index="3">
+        <div id="cr-l1" class="w-line" style="top: 290px"><span>What</span><span>it</span><span>takes</span><span>to</span><span>build</span><span>a</span></div>
+        <div id="cr-l2" class="y-big" style="top: 372px; font-size: 156px; line-height: 160px; gap: 0.16em"><span>₹1</span><span>crore</span></div>
+        <div id="cr-biz" class="serif sh" style="position: absolute; right: 110px; top: 520px; font-size: 66px; line-height: 72px">coaching business.</div>
+      </div>
+
+      <div id="g-enough" class="layer front clip" data-start="30.4" data-duration="4.1" data-track-index="3">
+        <div id="en-l1" class="w-line" style="top: 290px; justify-content: center; gap: 0.5em"><span>Your</span><span>expertise</span><span>is</span></div>
+        <div id="en-l2" class="y-big" style="top: 352px; font-size: 150px; line-height: 156px"><span>enough.</span></div>
+      </div>
+
+      <!-- B-roll cutaway: the income curve -->
+      <div id="g-income" class="layer front clip" data-start="53.0" data-duration="5.9" data-track-index="4" style="z-index: 8">
+        <div id="in-page" class="layer" style="background-color: #121113; background-image: radial-gradient(circle, rgba(245, 243, 238, 0.07) 1.6px, transparent 2.1px); background-size: 26px 26px">
+          <div id="in-k" class="small-caps center-x" style="top: 520px; color: #5AA9E6">Your coaching business</div>
+          <div class="page-tex"></div>
+          <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920">
+            <path id="in-area" d="M160 1290 C 300 1250, 480 1050, 590 800 S 760 690, 900 680 L 900 1300 L 160 1300 Z" fill="url(#dots-y)" opacity="0" />
+            <g filter="url(#boil)">
+            <path id="in-axes" d="M160 700 L 160 1300 L 940 1300" fill="none" stroke="rgba(245,243,238,0.45)" stroke-width="3" />
+            <path id="in-dream" d="M160 800 L 940 800" fill="none" stroke="#5AA9E6" stroke-width="3" stroke-dasharray="10 9" />
+            <path id="in-slow" d="M160 1290 C 420 1270, 640 1150, 940 812" fill="none" stroke="rgba(245,243,238,0.6)" stroke-width="5" stroke-linecap="round" />
+            </g>
+            <path id="in-fast" d="M160 1290 C 300 1250, 480 1050, 590 800 S 760 690, 900 680" fill="none" stroke="#FED100" stroke-width="11" stroke-linecap="round" filter="url(#brush)" />
+            <circle id="in-hit" cx="590" cy="800" r="14" fill="#FED100" />
+          </svg>
+          <div id="in-dl" class="serif" style="position: absolute; right: 140px; top: 726px; font-size: 54px; line-height: 60px; color: #5AA9E6">dream income</div>
+          <div id="in-sl" class="small-caps" style="position: absolute; left: 760px; top: 1100px; color: rgba(245, 243, 238, 0.75)">Undercharging</div>
+          <div id="in-fl" class="small-caps" style="position: absolute; left: 210px; top: 850px; color: var(--yellow)">High-ticket</div>
+          <div id="in-x" class="small-caps" style="position: absolute; left: 820px; top: 1322px; color: rgba(245, 243, 238, 0.6)">Time →</div>
+          <div id="in-y" class="small-caps" style="position: absolute; left: 120px; top: 660px; color: rgba(245, 243, 238, 0.6)">Income</div>
+          <div id="in-big" class="serif center-x ink" style="top: 1390px; font-size: 92px; line-height: 98px; color: var(--yellow)">much faster.</div>
+          <div class="page-vig"></div>
+        </div>
+      </div>
+
+      <div id="g-cta" class="layer front clip" data-start="74.0" data-duration="6.2" data-track-index="3">
+        <div id="cta-l1" class="w-line" style="top: 258px"><span>Comment</span><span>the</span><span>word</span></div>
+        <div id="keys" style="position: absolute; left: 0; width: 1080px; top: 330px; display: flex; justify-content: center; gap: 16px"><span class="key">S</span><span class="key">A</span><span class="key">L</span><span class="key">E</span><span class="key">S</span></div>
+        <div id="cta-s" class="serif sh center-x" style="top: 486px; font-size: 46px; line-height: 52px">&amp; get the high-ticket sales guide.</div>
+      </div>
+
+      <div id="captions" class="layer caps"><div id="cap-burn"></div></div>
+
+      <div id="g-tile" class="layer front clip" data-start="7.5" data-duration="2.3" data-track-index="5" style="z-index: 8">
+        <div id="tile">
+          <div id="t-num"><span class="ep">ep.</span><span class="n">04</span></div>
+          <div id="t-block">
+            <span id="t-coach">coach meet</span>
+            <span class="t-word" id="t-business">business</span>
+            <span class="t-word" id="t-series"><span id="t-bar"></span><span class="txt">series</span></span>
+          </div>
+          <div id="t-foot">Building a ₹1 crore business, step by step</div>
+        </div>
+      </div>
+
+      <div id="grain" class="layer front"></div>

@@ -1,0 +1,64 @@
+      <style>
+        /* origami-blue: the subject sits low — graphics own the space above the head.
+           Every group that lives in that space gets this zone transform (screen_y = 1.06*y + 45). */
+        #g-hook, #g-crore, #g-cta /* , #g-<beat> ... */ { transform: translateY(60px) scale(1.06); transform-origin: 540px 250px; }
+      </style>
+
+      <!-- ================= BEHIND THE SUBJECT (class "behind": chroma key puts him in front) =================
+           Diagrams/line art that may touch the hair go here. Text-heavy rows stay in front.
+           Every behind window must be listed in <work>/<key>-wins.json so the subject cut-out exists there. -->
+      <!-- <div id="g-diagram" class="layer behind clip" data-start="13.0" data-duration="15.4" data-track-index="1">
+             <div id="dg-all" class="layer"> svg line art with filter="url(#boil)" + small-caps labels + serif notes </div>
+           </div> -->
+
+      <!-- ghost type: faint halftone word behind the head on hero beats (hook / reframe / payoff) -->
+      <div id="gh-hook" class="layer behind clip" data-start="0" data-duration="6.5" data-track-index="6"><div id="gh1" class="ghost" style="top: 548px">word</div></div>
+
+      <!-- ================= IN FRONT ================= -->
+      <!-- hook: white justified kicker + big yellow headline + dry-brush underline that paints on the key word -->
+      <div id="g-hook" class="layer front clip" data-start="0" data-duration="6.5" data-track-index="3">
+        <div id="h-l1" class="w-line" style="top: 268px; justify-content: center; gap: 0.5em"><span>Kicker</span><span>words</span><span>here</span></div>
+        <div id="h-l2" class="y-big" style="top: 328px; font-size: 118px; line-height: 136px"><span>headline</span><span>here.</span></div>
+        <svg class="layer" viewBox="0 0 1080 1920" width="1080" height="1920"><path id="h-swoosh" d="M430 484 C 560 466, 740 460, 850 468 S 940 476, 980 464" fill="none" stroke="#5AA9E6" stroke-width="12" stroke-linecap="round" filter="url(#brush)" /></svg>
+      </div>
+
+      <!-- series line (Coach Meet Business Series): appears right after the tile -->
+      <div id="g-crore" class="layer front clip" data-start="9.0" data-duration="2.76" data-track-index="3">
+        <div id="cr-l1" class="w-line" style="top: 290px"><span>What</span><span>it</span><span>takes</span><span>to</span><span>build</span><span>a</span></div>
+        <div id="cr-l2" class="y-big" style="top: 372px; font-size: 156px; line-height: 160px; gap: 0.16em"><span>₹1</span><span>crore</span></div>
+        <div id="cr-biz" class="serif sh" style="position: absolute; right: 110px; top: 520px; font-size: 66px; line-height: 72px">coaching business.</div>
+      </div>
+
+      <!-- BEATS: label-column rows, kinetic headlines, callbacks ... (see references/style-system.md for components) -->
+
+      <!-- full-page B-roll cutaway (one per episode, z 8): dark paper page with dot grid + paper texture + vignette -->
+      <!-- <div id="g-page" class="layer front clip" data-start="38.0" data-duration="7.5" data-track-index="4" style="z-index: 8">
+             <div id="pg" class="layer" style="background-color: #121113; background-image: radial-gradient(circle, rgba(245, 243, 238, 0.07) 1.6px, transparent 2.1px); background-size: 26px 26px">
+               <div class="page-tex"></div>  ...metaphor...  <div class="page-vig"></div>
+             </div>
+           </div> -->
+
+      <!-- CTA: kicker + yellow key-caps of the comment keyword + serif promise -->
+      <div id="g-cta" class="layer front clip" data-start="131.0" data-duration="6.47" data-track-index="3">
+        <div id="cta-l1" class="w-line" style="top: 258px; justify-content: center; gap: 0.5em"><span>Comment</span><span>your</span></div>
+        <div id="keys" style="position: absolute; left: 0; width: 1080px; top: 330px; display: flex; justify-content: center; gap: 16px"><span class="key">O</span><span class="key">F</span><span class="key">F</span><span class="key">E</span><span class="key">R</span></div>
+        <div id="cta-s" class="serif sh center-x" style="top: 486px; font-size: 48px; line-height: 52px">&amp; I'll help you improve it, for free.</div>
+      </div>
+
+      <!-- captions (own layer; composite shifts them under the chin) -->
+      <div id="captions" class="layer caps"><div id="cap-burn"></div></div>
+
+      <!-- series tile (full screen, z 8) on "Welcome to Coach Meet Business Series" -->
+      <div id="g-tile" class="layer front clip" data-start="6.5" data-duration="2.95" data-track-index="5" style="z-index: 8">
+        <div id="tile">
+          <div id="t-num"><span class="ep">ep.</span><span class="n">00</span></div>
+          <div id="t-block">
+            <span id="t-coach">coach meet</span>
+            <span class="t-word" id="t-business">business</span>
+            <span class="t-word" id="t-series"><span id="t-bar"></span><span class="txt">series</span></span>
+          </div>
+          <div id="t-foot">Building a ₹1 crore business, step by step</div>
+        </div>
+      </div>
+
+      <div id="grain" class="layer front"></div>

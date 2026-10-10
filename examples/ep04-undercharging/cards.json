@@ -1,0 +1,93 @@
+[
+ {
+  "t": 2.4,
+  "title": "Hook",
+  "line": "When you close a lead … and you feel like you undersold yourself.",
+  "visual": "WHY YOU KEEP / UNDERCHARGING. White kicker + big yellow headline; underline draws on 'undersold'.",
+  "motion": "Kicker words blur in; headline blur-scales in; underline draws on 'undersold'; punch-in on 'undersold'. Exits up with blur."
+ },
+ {
+  "t": 6.9,
+  "title": "The price slider",
+  "line": "And because of that, you feel very frustrated.",
+  "visual": "New construction: a price slider. Yellow knob stuck at LOW, far from a dashed WHAT YOU'RE WORTH marker; a dotted THE GAP line between them. Serif: undersold.",
+  "motion": "Track fades in; knob nudges in from the left and stops short; worth marker + gap appear; 'undersold.' blurs in on 'frustrated' with a punch-in."
+ },
+ {
+  "t": 9.55,
+  "title": "Series tile",
+  "line": "Welcome to Coach Meet Business Series",
+  "visual": "Paper tile: ep. 04 big top-right; coach meet / business / series (blue bar). Same as ep.01–03.",
+  "motion": "Words land on the spoken word; tile wipes up to reveal the speaker."
+ },
+ {
+  "t": 12.1,
+  "title": "1 crore",
+  "line": "…what it takes to build a one crore coaching business.",
+  "visual": "WHAT IT TAKES TO BUILD A / ₹1 CRORE / coaching business. — series signature.",
+  "motion": "Word-synced kicker; ₹1 CRORE blur-scales in on 'one crore'."
+ },
+ {
+  "t": 20.9,
+  "title": "The life wheel",
+  "line": "…the transformation they are about to receive and how it will be impacting their life.",
+  "visual": "New diagram: a life wheel. White hub THEIR LIFE, six segments with labels in two columns (health, wealth, career | relationships, confidence, peace) light up yellow one by one.",
+  "motion": "Hub pops on 'transformation'; rim draws; spokes fade in; segments fill in sequence on 'impacting'; labels appear on 'life'."
+ },
+ {
+  "t": 27.9,
+  "title": "The gap",
+  "line": "But you quote a very small price, and because of that, you undersell yourself.",
+  "visual": "Slider callback: knob slides from the middle down to LOW; THE GAP opens to the worth marker. Serif: you undersold yourself.",
+  "motion": "Knob glides left on 'small price' with a punch-in; gap line reveals; serif line on 'undersell'."
+ },
+ {
+  "t": 34.1,
+  "title": "Enough",
+  "line": "…the kind of expertise that I have to solve that problem is enough.",
+  "visual": "YOUR EXPERTISE IS / ENOUGH. (big yellow).",
+  "motion": "Kicker words on 'expertise … is'; ENOUGH. lands on 'enough' with a punch-in."
+ },
+ {
+  "t": 38.5,
+  "title": "Belief gauge (low)",
+  "line": "…because of the belief factor associated with the transformation.",
+  "visual": "New diagram: a belief gauge. Thin semicircle with ticks, DOUBT ↔ CERTAINTY (yellow zone at the high end); needle sits low. Serif: belief.",
+  "motion": "Arc draws on 'belief factor'; needle twitches at the low end (hesitation)."
+ },
+ {
+  "t": 51.0,
+  "title": "Belief gauge (high)",
+  "line": "…the best mechanism … then you become very confident…",
+  "visual": "Same gauge: needle swung into the yellow CERTAINTY zone. Serif: confident.",
+  "motion": "Needle rises slowly on 'instill', then swings hard with overshoot on 'best mechanism'; 'confident.' blurs in."
+ },
+ {
+  "t": 52.85,
+  "title": "High-ticket",
+  "line": "…confident in quoting a high ticket price.",
+  "visual": "Slider callback: knob glides all the way to HIGH-TICKET; the gap closes and the worth marker fades (now charging their worth). Serif: with confidence.",
+  "motion": "Knob travels left→right in 0.85s (power3); HIGH-TICKET label pulses on arrival."
+ },
+ {
+  "t": 58.4,
+  "title": "B-roll: income",
+  "line": "…get to the dream income of your coaching business much more faster.",
+  "visual": "Full-screen graphic cutaway. Dark page; dashed yellow DREAM INCOME line; slow white UNDERCHARGING curve vs steep yellow HIGH-TICKET curve that hits the line first. Big serif: much faster.",
+  "motion": "Page slides up; axes draw; dream line draws on 'dream income'; slow curve draws slowly, fast curve overtakes it; hit dot pops; 'much faster.' on 'faster'."
+ },
+ {
+  "t": 69.5,
+  "title": "Absolute clarity",
+  "line": "…absolute clarity on the transformation across all aspects of life…",
+  "visual": "Life wheel callback: hub turns yellow ABSOLUTE CLARITY; every segment fills yellow; rim turns yellow.",
+  "motion": "Wheel fades back in; hub flips on 'clarity'; segments fill in sequence on 'across all aspects of life'."
+ },
+ {
+  "t": 78.5,
+  "title": "CTA",
+  "line": "Comment sales and I'm gonna send you a high-ticket sales guide…",
+  "visual": "COMMENT THE WORD / [S][A][L][E][S] yellow keys / serif: & get the high-ticket sales guide.",
+  "motion": "Kicker words on 'comment'; keys drop in one after another; serif line on 'high-ticket'."
+ }
+]

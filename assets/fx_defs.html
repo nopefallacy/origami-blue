@@ -1,0 +1,19 @@
+      <!-- handmade fx: line boil, dry-brush stroke, halftone fills (referenced by every layer) -->
+      <svg id="fx-defs" width="0" height="0" style="position: absolute; left: 0; top: 0">
+        <defs>
+          <filter id="boil" x="-4%" y="-6%" width="108%" height="112%">
+            <feTurbulence id="boil-t" type="fractalNoise" baseFrequency="0.028" numOctaves="2" seed="1" result="n" />
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G" />
+          </filter>
+          <filter id="brush" x="-4%" y="-40%" width="108%" height="180%">
+            <feTurbulence id="brush-t" type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3" result="n" />
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d" />
+            <feTurbulence type="fractalNoise" baseFrequency="0.012 0.55" numOctaves="2" seed="11" result="s" />
+            <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.6 2.15" result="sa" />
+            <feComposite in="d" in2="sa" operator="in" />
+          </filter>
+          <pattern id="dots-y" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="2.4" fill="#FED100" /></pattern>
+          <pattern id="dots-b" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="2.4" fill="#5AA9E6" /></pattern>
+          <pattern id="dots-w" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="2.1" fill="#F5F3EE" /></pattern>
+        </defs>
+      </svg>

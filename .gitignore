@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+scripts/node/node_modules/
+# sound effects come from licensed libraries; scripts/get_sfx.sh fetches stand-ins
+assets/template/sfx/*.mp3
+# footage frames show the creator; they stay in the local copy only (graphics-sheet.jpg is the public reference)
+examples/*/cards-overview.jpg
+examples/*/final-frames.jpg
+examples/*/cards-board-sample.jpg
